@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Людмила Гвоздицких](https://up.htmlacademy.ru/adaptive/12/user/143385).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил  Поданев](https://up.htmlacademy.ru/adaptive/12/user/63947).
 
 ---
 
