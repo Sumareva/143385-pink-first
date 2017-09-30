@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__menu">
+        <a class="page-header__logo" href="#">PINK</a>
+        <a class="menu-toggler" href="#"><span></span></a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li>
+              <a class="main-nav__item" href="index.html"><span>Главная</span></a>
+            </li>
+            <li>
+              <a class="main-nav__item" href="photo.html"><span>Фотографии</span></a>
+            </li>
+            <li>
+              <a class="main-nav__item" href=""><span>Конкурс</span></a>
+            </li>
+            <li>
+              <a class="main-nav__item" href="https://htmlacademy.ru/intensive/adaptive"><span>HTML ACADEMY</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="promo inner-promo">
+        <div class="promo__text"><span>Конкурс на самое безбашенное путешествие с Пинк</span>
+        </div>
+      </div>
+    </header>
+    <div class="contest">
+      <div class="contest__promo">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      </div>
+      <form action="https://echo.htmlacademy.ru" class="contest__form" method="post">
+        <div class="fio">
+          <div class="fio__item">
+            <label for="last-name">Фамилия:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
+          </div>
+          <div class="fio__item">
+            <label for="first-name">Имя:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
+          </div>
+          <div class="input  fio__item">
+            <label for="middle-name">Отчество:</label>
+            <input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+          </div>
+        </div>
+        <div class="achievments">
+          <div class="achievments__item">
+            <input type="checkbox" id="achiev-selfy" name="achiev-selfy" checked>
+            <label for="achiev-selfy">Сделал селфи с акулой</label>
+          </div>
+          <div class="achievments__item">
+            <input type="checkbox" id="achiev-beach" name="achiev-beach" checked>
+            <label for="achiev-beach">Обгорел на пляже</label>
+          </div>
+          <div class="achievments__item">
+            <input type="checkbox" id="achiev-chuck" name="achiev-chuck">
+            <label for="achiev-chuck">Видел Чака Норриса</label>
+          </div>
+          <div class="achievments__item">
+            <input type="checkbox" id="achiev-gifts" name="achiev-gifts">
+            <label for="achiev-gifts">Накупил сувениров</label>
+          </div>
+          <div class="achievments__item">
+            <input type="checkbox" id="achiev-tower" name="achiev-tower" checked>
+            <label for="achiev-tower">Удержал башню</label>
+          </div>
+          <div class="achievments__item">
+            <input type="checkbox" id="achiev-hotel" name="achiev-hotel">
+            <label for="achiev-hotel">Разгромил отель</label>
+          </div>
+        </div>
+        <div class="form-contacts">
+          <div class="form-contacts__item">
+            <label for="tel">Номер телефона</label>
+            <input type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="form-contacts__item">
+            <label for="email">Адрес почты</label>
+            <input type="email" id="email" name="email" placeholder="Введите почту*" required>
+          </div>
+        </div>
+        <div class="system-choice">
+          <div class="system-choice__title">
+            <p>С каким приложением путешествовали?</p>
+          </div>
+          <div class="system-choice__item">
+            <input type="radio" name="for-system" id="for-ios" checked>
+            <label for="for-ios">Pink для iOS</label>
+          </div>
+          <div class="system-choice__item">
+            <input type="radio" name="for-system" id="for-android">
+            <label for="for-android">Pink на Android</label>
+          </div>
+          <div class="system-choice__item">
+            <input type="radio" name="for-system" id="for-windows">
+            <label for="for-windows">Windows Phone</label>
+          </div>
+        </div>
+        <div class="review-message">
+          <label for="message-text">Опишите свои эмоции</label>
+          <textarea type="text" id="message-text" name="message-text" rows="6">Можно прям в красках, не стесняясь в выражениях
+          </textarea>
+        </div>
+        <div class="contest__submit">
+          <input type="submit" class="btn  btn--green" value="Отправить форму">
+          <p>*-обязательные поля</p>
+        </div>
+      </form>
+    </div>
+    <footer class="inner-footer">
+      <div class="inner-footer__logo">
+        <a class="inner-footer__logo" href="#">PINK</a>
+      </div>
+      <div class="inner-footer__social">
+        <a class="social social-twitter" href="#">Twitter</a>
+        <a class="social social-facebook" href="#">Facebook</a>
+        <a class="social social-youtube" href="#">Youtube</a>
+      </div>
+      <div class="inner-footer__copyright">
+        <span><p>Разработано</p></span>
+        <span class="icon icon-copyright"></span>
+      </div>
+    </footer>
+  </body>
+</html>
