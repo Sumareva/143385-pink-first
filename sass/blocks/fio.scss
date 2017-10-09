@@ -1,0 +1,16 @@
+.fio {
+  line-height: 30px;
+  input[type="text"] {
+    font-family: inherit;
+    color: inherit;
+    font-size: 18px;
+    border: 2px solid #e5e5e5;
+    width: 280px;
+    padding: inherit;
+  }
+  label {
+    line-height: 30px;
+    color: #d22856;
+    text-transform: uppercase;
+  }
+}

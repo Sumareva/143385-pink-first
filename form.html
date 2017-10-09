@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__menu">
-        <a class="page-header__logo" href="#">PINK</a>
+          <a class="page-header__logo" href="#">
+            <img src="img/logo-pink-white-mobile.svg" alt="PINK"></a>
         <a class="menu-toggler" href="#"><span></span></a>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -26,7 +28,7 @@
           </ul>
         </nav>
       </div>
-      <div class="promo inner-promo">
+      <div class="promo promo--inner">
         <div class="promo__text"><span>Конкурс на самое безбашенное путешествие с Пинк</span>
         </div>
       </div>
@@ -38,19 +40,22 @@
       <form action="https://echo.htmlacademy.ru" class="contest__form" method="post">
         <div class="fio">
           <div class="fio__item">
-            <label for="last-name">Фамилия:</label>
+            <label for="last-name">Фамилия:</label><br>
             <input type="text" id="last-name" name="last-name" placeholder="Укажите фамилию*" required>
           </div>
           <div class="fio__item">
-            <label for="first-name">Имя:</label>
+            <label for="first-name">Имя:</label><br>
             <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" required>
           </div>
-          <div class="input  fio__item">
-            <label for="middle-name">Отчество:</label>
+          <div class="fio__item">
+            <label for="middle-name">Отчество:</label><br>
             <input type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
           </div>
         </div>
         <div class="achievments">
+          <div class="contest__title">
+            <p>Ваши безбашенные достижения в путешествии</p>
+          </div>
           <div class="achievments__item">
             <input type="checkbox" id="achiev-selfy" name="achiev-selfy" checked>
             <label for="achiev-selfy">Сделал селфи с акулой</label>
@@ -78,16 +83,16 @@
         </div>
         <div class="form-contacts">
           <div class="form-contacts__item">
-            <label for="tel">Номер телефона</label>
+            <label for="tel">Номер телефона</label><br>
             <input type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
           </div>
           <div class="form-contacts__item">
-            <label for="email">Адрес почты</label>
+            <label for="email">Адрес почты</label><br>
             <input type="email" id="email" name="email" placeholder="Введите почту*" required>
           </div>
         </div>
         <div class="system-choice">
-          <div class="system-choice__title">
+          <div class="contest__title">
             <p>С каким приложением путешествовали?</p>
           </div>
           <div class="system-choice__item">
@@ -104,28 +109,30 @@
           </div>
         </div>
         <div class="review-message">
-          <label for="message-text">Опишите свои эмоции</label>
-          <textarea type="text" id="message-text" name="message-text" rows="6">Можно прям в красках, не стесняясь в выражениях
+          <label for="message-text" class="contest__title">Опишите свои эмоции</label>
+          <textarea type="text" id="message-text" name="message-text" rows="5">Можно прям в красках, не стесняясь в выражениях
           </textarea>
         </div>
         <div class="contest__submit">
           <input type="submit" class="btn  btn--green" value="Отправить форму">
-          <p>*-обязательные поля</p>
+          <p><span>*</span>-обязательные поля</p>
         </div>
       </form>
     </div>
     <footer class="inner-footer">
       <div class="inner-footer__logo">
-        <a class="inner-footer__logo" href="#">PINK</a>
+        <a class="inner-footer__logo" href="">
+          <img src="img/logo-pink-blue-mobile.svg" alt="PINK"></a>
       </div>
       <div class="inner-footer__social">
-        <a class="social social-twitter" href="#">Twitter</a>
-        <a class="social social-facebook" href="#">Facebook</a>
-        <a class="social social-youtube" href="#">Youtube</a>
+        <a class="social social--twitter" href="#"></a>
+        <a class="social social--facebook" href="#"></a>
+        <a class="social social--youtube" href="#"></a>
       </div>
       <div class="inner-footer__copyright">
-        <span><p>Разработано</p></span>
-        <span class="icon icon-copyright"></span>
+        <p>Разработано</p>
+        <a class="icon icon-copyright" href="htmlacademy.html">
+          <img src="img/htmlacademy.svg" alt="HTML ACADEMY"></a>
       </div>
     </footer>
   </body>

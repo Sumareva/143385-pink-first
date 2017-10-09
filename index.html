@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__menu">
-        <a class="page-header__logo" href="#">PINK</a>
+        <a class="page-header__logo" href="#">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK"></a>
         <a class="menu-toggler" href="#"><span></span></a>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -25,25 +27,26 @@
             </li>
           </ul>
         </nav>
+        <div class="promo">
+          <div class="promo__text"><span class="visualy-hidden">Взгляните на жизнь иначе!</span>
+            <img src="img/iphone-hand-mobile@1x.png" width="258" height="286">
+          </div>
+        </div>
       </div>
-      <div class="promo">
-        <div class="promo__text"><span>Взгляните на жизнь иначе!</span>
-          <a class="btn promo__btn" href="#">Скачать приложение</a>
-        </div>
-        <div class="download promo__download">
-          <ul class="download__list">
-            <li>
-              <a class="system  system--ios" href="#" alt="Скачать приложение для устройств Mac OS"><span></span></a>
-            </li>
-            <li>
-              <a class="system  system--android" href="#" alt="Скачать приложение для устройств Android"><span></span></a>
-            </li>
-            <li>
-              <a class="system  system--windows" href="#" alt="Скачать приложение для устройств Windows"><span></span></a>
-            </li>
-          </ul>
-          <p class="download__text">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
-        </div>
+      <div class="download">
+        <a class="btn btn--download" href="#">Скачать приложение</a>
+        <ul class="download__list">
+          <li>
+            <a class="system  system--ios" href="#"><img src="img/logo-apple.svg" width="50px" height="60px" alt="Скачать приложение для устройств Mac OS"></a>
+          </li>
+          <li>
+            <a class="system  system--android" href="#"><img src="img/logo-android.svg" alt="Скачать приложение для устройств Android"></a>
+          </li>
+          <li>
+            <a class="system  system--windows" href="#"><img src="img/logo-microsoft.svg" alt="Скачать приложение для устройств Windows"></a>
+          </li>
+        </ul>
+        <p class="download__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
       </div>
     </header>
     <div class="features">
@@ -64,32 +67,36 @@
           <h2 class="features__h2">Заводит новых друзей</h2>
           <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
+        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320">
       </div>
     </div>
     <div class="reviews">
       <div class="reviews__wrapper slider">
+        <input type="radio" id="button-1" name="review-toggle" checked>
+        <input type="radio" id="button-2" name="review-toggle">
+        <input type="radio" id="button-3" name="review-toggle">
         <div class="reviews__list slider__list">
           <div class="reviews__item slider__item">
             <h2 class="reviews__title">Николай Петров</h2>
             <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился с будщей женой в комментариях к выложенной фотографии!"
             </blockquote>
           </div>
-          <div class="reviews__item slider__item">
+          <div class="reviews__item slider__item visualy-hidden">
             <h2 class="reviews__title">Николай Петров</h2>
             <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился с будщей женой в комментариях к выложенной фотографии!"
             </blockquote>
           </div>
-          <div class="reviews__item slider__item">
+          <div class="reviews__item slider__item visualy-hidden">
             <h2 class="reviews__title">Николай Петров</h2>
             <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился с будщей женой в комментариях к выложенной фотографии!"
             </blockquote>
           </div>
         </div>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <div class="slider-controls">
+          <label for="button-1"></label>
+          <label for="button-2"></label>
+          <label for="button-3"></label>
+        </div>
       </div>
     </div>
     <div class="tariffs">
@@ -97,11 +104,6 @@
         <input type="radio" id="btn-1" name="toggle">
         <input type="radio" id="btn-2" name="toggle" checked>
         <input type="radio" id="btn-3" name="toggle">
-        <div class="slider-controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
-        </div>
         <table class="tariffs__table">
           <tr class="tariffs__row-1">
             <td class="tariffs__col-1">
@@ -121,35 +123,35 @@
           <tr class="tariffs__row-2">
             <td class="tariffs__col-1">
               <span class="tariffs__option">Розовый фильтр</span>
-              <span class="icon icon-allowed">Есть</span>
+              <span class="icon icon-allowed"></span>
             </td>
             <td class="tariffs__col-2">
               <span class="tariffs__option">Розовый фильтр</span>
-              <span class="icon icon-allowed">Есть</span>
+              <span class="icon icon-allowed"></span>
             </td>
             <td class="tariffs__col-3">
               <span class="tariffs__option">Розовый фильтр</span>
-              <span class="icon icon-allowed">Есть</span>
+              <span class="icon icon-allowed"></span>
             </td>
           </tr>
           <tr class="tariffs__row-3">
             <td class="tariffs__col-1">
               <span class="tariffs__option">Смайлики</span>
-              <span class="icon icon-allowed">Есть</span>
+              <span class="icon icon-allowed"></span>
             </td>
             <td class="tariffs__col-2">
               <span class="tariffs__option">Смайлики</span>
-              <span class="icon icon-allowed">Есть</span>
+              <span class="icon icon-allowed"></span>
             </td>
             <td class="tariffs__col-3">
               <span class="tariffs__option">Смайлики</span>
-              <span class="icon icon-allowed">Есть</span>
+              <span class="icon icon-allowed"></span>
             </td>
           </tr>
           <tr class="tariffs__row-4">
             <td class="tariffs__col-1">
               <span class="tariffs__option">Комментарии</span>
-              <span class="disabled">Нет</span>
+              <span class="disabled"></span>
             </td>
             <td class="tariffs__col-2">
               <span class="tariffs__option">Комментарии</span>
@@ -161,6 +163,11 @@
             </td>
           </tr>
         </table>
+        <div class="slider-controls slider-controls--gray">
+          <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>
+        </div>
       </div>
     </div>
     <footer class="page-footer">
@@ -183,6 +190,7 @@
         </div>
       </div>
       <div class="map">
+        <img src="img/bg-map-mobile@1x.png" width="320" height="421">
       </div>
     </footer>
   </body>

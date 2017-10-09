@@ -1,0 +1,35 @@
+.promo {
+  background-color: #1d2631;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  a {
+    text-decoration: none;
+  }
+  .system {
+    padding:0;
+    display: block;
+    margin-right: 30px;
+  }
+  &__text {
+    font-size: 24px;
+    padding: 20px;
+    background-image: url("/img/bg-back-mobile@1x.jpg");
+    background-position: center;
+    background-size: cover;
+    img {
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+.promo__btn{
+  display: block;
+ margin-top: 50px;
+}
+.visualy-hidden {
+  display: none;
+}
+
