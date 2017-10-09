@@ -1,0 +1,16 @@
+.page-header__menu {
+  background-color: #1d2631;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active {
+      color: white;
+      opacity: 0.3;
+    }
+  }
+}

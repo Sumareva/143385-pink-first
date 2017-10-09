@@ -10,17 +10,21 @@
   text-decoration: none;
   border-radius: 25px;
 }
+
 .btn--green {
   background-color: #2aab6d;
   text-transform: uppercase;
   border-radius: 0;
+
   &:hover {
     background-color: #1c9b5e;
     color: #9ecdb3;
   }
+
   &:active {
     color: #7abc98;
   }
+
   &:disabled {
     background-color: #e5e5e5;
     color: #f1f1f1;

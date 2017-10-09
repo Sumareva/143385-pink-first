@@ -1,15 +1,8 @@
 .like-count {
-  .icon-heart {
-    width: 13px;
-    height:13px;
-    background-image: url("/img/icon-heart.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   &__text {
     font-size: 12px;
     line-height: 24px;
-    color:#d22856;
+    color: #d22856;
     text-transform: uppercase;
     padding-left: 50px;
   }

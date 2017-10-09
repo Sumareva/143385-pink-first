@@ -1,17 +1,20 @@
 @font-face {
   font-family: "OpenSans";
-  src: url(/fonts/opensans.woff);
-  src: url(/fonts/opensans.woff2);
-  }
-body { background: #ffffff;
-width: 320px;
-margin: 0;
-font-size: 14px;
-line-height: 24px;
-color: #283645;
-font-family: OpenSans;
-text-align: center;
+  src: url("/fonts/opensans.woff");
+  src: url("/fonts/opensans.woff2");
 }
+
+body {
+  background: #ffffff;
+  width: 320px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  font-family: "OpenSans";
+  text-align: center;
+}
+
 @import "blocks/main-nav.scss";
 @import "blocks/promo.scss";
 @import "blocks/btn.scss";
@@ -33,51 +36,10 @@ text-align: center;
 @import "blocks/download.scss";
 @import "blocks/slider.scss";
 @import "blocks/filters.scss";
-
-.page-header__menu {
-  background-color: #1d2631;
-  a {
-    text-decoration: none;
-    &:hover {
-      color: #d22856;
-    }
-    &:active {
-      color: white;
-      opacity: 0.3;
-    }
-  }
-}
-.reviews {
-  line-height: 30px;
-  &__title {
-    color: #000000;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 50px;
-  }
-}
-
-
-
-
-
-/*
-@import url(variables.scss);
-@import url(mixins.scss);
-
-
-
-
-
-
-@import url(blocks/icon.scss);
-@import url(blocks/inner-footer.scss);
-@import url(blocks/main-nav.scss);
-
-@import url(blocks/reviews.scss);
-
-@import url(blocks/social.scss);
-
-@import url(blocks/system.scss);
-
-*/
+@import "variables.scss";
+@import "blocks/icon.scss";
+@import "blocks/inner-footer.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/reviews.scss";
+@import "blocks/social.scss";
+@import "blocks/system.scss";

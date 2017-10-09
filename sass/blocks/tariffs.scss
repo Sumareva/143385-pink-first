@@ -1,34 +1,34 @@
 .tariffs {
   background-color: #f2f2f2;
+
   &__table {
     line-height: 30px;
     text-transform: uppercase;
-    border-collapse:collapse;
+    border-collapse: collapse;
     background-color: #ffffff;
   }
+
   td {
-    border:2px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
     width: 276px;
   }
+
   &__row-1 {
     background-color: #283645;
     color: white;
   }
+
   &__name {
     font-size: 18px;
     font-weight: bold;
   }
-  &__price{
+
+  &__price {
     font-size: 24px;
     font-weight: 400;
   }
+
   &__promo {
     background-color: #d22856;
-  }
-  .icon-allowed {
-    background-image: url("/img/icon-yes.svg");
-  }
-  .disabled {
-    background-image: url("/img/icon-no.svg");
   }
 }
