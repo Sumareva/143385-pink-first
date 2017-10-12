@@ -1,17 +1,25 @@
-.contest__promo {
-  line-height: 30px;
-}
-
 .contest__form {
   text-align: left;
   padding: 20px;
 }
 
 .contest__title {
-  color: #d22856;
+  color: $pink;
   text-transform: uppercase;
-  line-height: 14px;
+  line-height: 18px;
   text-align: center;
+}
+
+.contest input[type="text"],
+.contest input[type="tel"],
+.contest input[type="email"],
+.contest textarea {
+  font-family: inherit;
+  color: inherit;
+  font-size: 18px;
+  border: 2px solid #e5e5e5;
+  width: 280px;
+  padding: inherit;;
 }
 
 .contest input[type="text"]:hover,
@@ -25,16 +33,13 @@
 .contest input[type="tel"]:focus,
 .contest input[type="email"]:focus,
 .contest textarea:focus {
-  border-color: #d22856;
+  border-color: $pink;
 }
 
 .contest__submit p {
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
 }
 
 .contest__submit span {
-  color: #d22856;
+  color: $pink;
 }

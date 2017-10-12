@@ -1,11 +1,5 @@
-.features {
-  font-size: 24px;
-  color: #283645;
-  background-color: #ffffff;
-}
-
 .features__items {
-  background-color: #f2f2f2;
+  background-color: $gray;
 }
 
 .features__h2 {
@@ -19,8 +13,10 @@
 }
 
 .features__title {
+  font-size: 24px;
   text-align: center;
-  font-weight: 400;
+  font-weight: light;
+  line-height: normal;
 }
 
 .features__item {

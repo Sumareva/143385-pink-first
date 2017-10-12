@@ -1,15 +1,14 @@
 .user-posting {
-  background-color: #f2f2f2;
+  background-color: $gray;
 }
 
 .user-posting__promo {
   background-color: white;
-  line-height: 30px;
 }
 
 .user-posting__btn {
-  border-color: #d22856;
-  color: #d22856;
+  border-color: $pink;
+  color: $pink;
 }
 
 .user-posting__btn--cancel {

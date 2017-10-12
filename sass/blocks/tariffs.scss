@@ -1,9 +1,8 @@
 .tariffs {
-  background-color: #f2f2f2;
+  background-color: $gray;
 }
 
 .tariffs__table {
-  line-height: 30px;
   text-transform: uppercase;
   border-collapse: collapse;
   background-color: #ffffff;
@@ -15,7 +14,7 @@
 }
 
 .tariffs__row-1 {
-  background-color: #283645;
+  background-color: $blue;
   color: white;
 }
 
@@ -26,9 +25,9 @@
 
 .tariffs__price {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: light;
 }
 
 .tariffs__promo {
-  background-color: #d22856;
+  background-color: $pink;
 }
