@@ -1,19 +1,19 @@
 .form-contacts {
   line-height: 30px;
+}
 
-  input[type="tel"],
-  input[type="email"] {
-    font-family: inherit;
-    color: inherit;
-    font-size: 18px;
-    border: 2px solid #e5e5e5;
-    width: 280px;
-    padding: inherit;
-  }
+.form-contacts  input[type="tel"],
+.form-contacts  input[type="email"] {
+  font-family: inherit;
+  color: inherit;
+  font-size: 18px;
+  border: 2px solid #e5e5e5;
+  width: 280px;
+  padding: inherit;
+}
 
-  label {
-    line-height: 30px;
-    color: #d22856;
-    text-transform: uppercase;
-  }
+.form-contacts  label {
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
 }

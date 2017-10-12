@@ -1,16 +1,15 @@
-.page-header__menu {
+.page-header {
   background-color: #1d2631;
+}
 
-  a {
-    text-decoration: none;
+.page-header a {
+  text-decoration: none;
+  background-color: #1d2631;
+}
 
-    &:hover {
-      color: #d22856;
-    }
-
-    &:active {
-      color: white;
-      opacity: 0.3;
-    }
-  }
+.menu-toggler {
+  background-image: url("/img/icon-menu-cross.svg");
+  display: block;
+  width: 20px;
+  height: 20px;
 }

@@ -1,19 +1,18 @@
 .download {
   background-color: #1d2631;
   padding: 20px;
+}
 
-  ul {
-    list-style: none;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-  }
+.download  ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
 
-  &__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 27px;
-    color: white;
-  }
+.download__text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 27px;
+  color: white;
 }

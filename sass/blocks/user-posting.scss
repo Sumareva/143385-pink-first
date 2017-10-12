@@ -1,28 +1,18 @@
 .user-posting {
   background-color: #f2f2f2;
+}
 
-  &__promo {
-    background-color: white;
-    line-height: 30px;
-  }
+.user-posting__promo {
+  background-color: white;
+  line-height: 30px;
+}
 
-  &__btn {
-    border-color: #d22856;
-    color: #d22856;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+.user-posting__btn {
+  border-color: #d22856;
+  color: #d22856;
+}
 
-  &__btn--cancel {
-    border-color: #dddfe0;
-    color: #dddfe0;
-  }
-
-  &__choice {
-    a {
-      display: block;
-      margin: 0;
-      width: 280px;
-    }
-  }
+.user-posting__btn--cancel {
+  border-color: #dddfe0;
+  color: #dddfe0;
 }

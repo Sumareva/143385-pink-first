@@ -1,21 +1,19 @@
-.photo-feed {
-  &__promo {
-    line-height: 30px;
-    padding-top: 56px;
-  }
+.photo-feed__promo {
+  line-height: 30px;
+  padding-top: 56px;
+}
 
-  &__title {
-    width: 132px;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 24px;
-    color: white;
-    background-color: #d22856;
-  }
+.photo-feed__title {
+  width: 132px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  color: white;
+  background-color: #d22856;
+}
 
-  ul {
+.photo-feed  ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
 }

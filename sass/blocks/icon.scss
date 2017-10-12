@@ -1,16 +1,17 @@
-.icon-copyright {
-  img {
-    width: 27px;
-    height: 35px;
-  }
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-copyright img {
+  width: 27px;
+  height: 35px;
 }
 
 .icon-heart {
   width: 13px;
   height: 13px;
   background-image: url("/img/icon-heart.svg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .icon-allowed {
