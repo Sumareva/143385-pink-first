@@ -4,7 +4,11 @@
   font-size: 24px;
   font-weight: light;
   line-height: normal;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
   background-size: cover;
+  padding: 35px 76px;;
+}
+.promo-inner {
+  background-size: contain;
 }
