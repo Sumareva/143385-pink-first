@@ -1,0 +1,33 @@
+.filters {
+  position: relative;
+}
+
+.filters input[type="radio"] {
+  display: none;
+}
+
+.filter-controls {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.filter-controls label {
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  margin: 0 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter-controls .filter1 {
+  background-image: url("/img/icon-editor-crop.svg");
+}
+
+.filter-controls .filter2 {
+  background-image: url("/img/icon-editor-fill.svg");
+}
+
+.filter-controls .filter3 {
+  background-image: url("/img/icon-editor-contrast.svg");
+}

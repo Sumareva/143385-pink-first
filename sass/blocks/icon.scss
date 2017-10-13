@@ -1,0 +1,23 @@
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-copyright img {
+  width: 27px;
+  height: 35px;
+}
+
+.icon-heart {
+  width: 13px;
+  height: 13px;
+  background-image: url("../img/icon-heart.svg");
+}
+
+.icon-allowed {
+  background-image: url("../img/icon-yes.svg");
+}
+
+.icon-disabled {
+  background-image: url("../img/icon-no.svg");
+}

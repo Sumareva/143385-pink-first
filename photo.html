@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__menu">
-        <a class="page-header__logo" href="#">PINK</a>
+          <a class="page-header__logo" href="#">
+            <img src="img/logo-pink-white-mobile.svg" alt="PINK"></a>
         <a class="menu-toggler" href="#"><span></span></a>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -26,8 +28,8 @@
           </ul>
         </nav>
       </div>
-      <div class="promo inner-promo">
-        <div class="promo__text"><span>Взгляните на жизнь иначе!</span>
+      <div class="promo promo--inner">
+        <div class="promo__text"><span>Фотографии пользователей</span>
         </div>
       </div>
     </header>
@@ -41,32 +43,32 @@
       <ul class="photo-feed__list">
         <li class="photo-feed__item">
           <article class="photo-post">
-            <div class="photo-post__picture">
-              <img src="http://placehold.it/150x100" alt="" width="" height="">
+            <div class="photo-post__picture photo-post__picture--first">
+              <img src="img/panorama-mobile@1x.jpg" alt="" width="320" height="137">
             </div>
             <div class="photo-post__post">
               <span class="photo-post__author">Анна</span>
               <time >(5 минут назад)</time>
-              <span class="photo-post__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую транслцию  перископе, задавайте свои вопросы!</span>
+              <p class="photo-post__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую транслцию  перископе, задавайте свои вопросы!</p>
             </div>
             <div class="like-count">
-              <span class="icon icon-heart"></span>
-              <span class="like-count__text">Нравится: 215</span>
+              <div class="icon icon-heart">
+              <span class="like-count__text">Нравится: 215</span></div>
             </div>
           </article>
         </li>
         <li class="photo-feed__item">
           <article class="photo-post">
             <div class="photo-post__picture">
-              <img src="http://placehold.it/150x100" alt="" width="" height="">
+              <img src="img/photo-car-mobile@1x.jpg" alt="">
             </div>
             <div class="photo-post__post">
               <span class="photo-post__author">Левон</span>
               <time >(5 часов назад)</time>
-              <span class="photo-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</span>
+              <p class="photo-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             </div>
             <div class="like-count">
-              <span class="icon icon-heart"></span>
+              <span class="icon icon-heart"> </span>
               <span class="like-count__text">Нравится: 356</span>
             </div>
           </article>
@@ -74,12 +76,12 @@
         <li class="photo-feed__item">
           <article class="photo-post">
             <div class="photo-post__picture">
-              <img src="http://placehold.it/150x100" alt="" width="" height="">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="">
             </div>
             <div class="photo-post__post">
               <span class="photo-post__author">Антон</span>
               <time >(12 часов назад)</time>
-              <span class="photo-post__text">Соседи будут рады!</span>
+              <p class="photo-post__text">Соседи будут рады!</p>
             </div>
             <div class="like-count">
               <span class="icon icon-heart"></span>
@@ -90,12 +92,12 @@
         <li class="photo-feed__item">
           <article class="photo-post">
             <div class="photo-post__picture">
-              <img src="http://placehold.it/150x100" alt="" width="" height="">
+              <img src="img/photo-window-mobile@1x.jpg" alt="">
             </div>
             <div class="photo-post__post">
               <span class="photo-post__author">Борис</span>
               <time >(20 часов назад)</time>
-              <span class="photo-post__text">Здесь могла быть ваша цитата о высоком и вечном.</span>
+              <p class="photo-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             </div>
             <div class="like-count">
               <span class="icon icon-heart"></span>
@@ -106,12 +108,12 @@
         <li class="photo-feed__item">
           <article class="photo-post">
             <div class="photo-post__picture">
-              <img src="http://placehold.it/150x100" alt="" width="" height="">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="">
             </div>
             <div class="photo-post__post">
               <span class="photo-post__author">Сергей</span>
               <time >(25 часов назад)</time>
-              <span class="photo-post__text">Самая кубанская в мире!</span>
+              <p class="photo-post__text">Самая кубанская в мире!</p>
             </div>
             <div class="like-count">
               <span class="icon icon-heart"></span>
@@ -122,12 +124,12 @@
         <li class="photo-feed__item">
           <article class="photo-post">
             <div class="photo-post__picture">
-              <img src="http://placehold.it/150x100" alt="" width="" height="">
+              <img src="img/photo-pov-mobile@1x.jpg" alt="">
             </div>
             <div class="photo-post__post">
               <span class="photo-post__author">Максим</span>
               <time >(40 часов назад)</time>
-              <span class="photo-post__text">Где снег-то?</span>
+              <p class="photo-post__text">Где снег-то?</p>
             </div>
             <div class="like-count">
               <span class="icon icon-heart"></span>
@@ -138,12 +140,12 @@
         <li class="photo-feed__item">
           <article class="photo-post">
             <div class="photo-post__picture">
-              <img src="http://placehold.it/150x100" alt="" width="" height="">
+              <img src="img/photo-wing-mobile@1x.jpg" alt="">
             </div>
             <div class="photo-post__post">
               <span class="photo-post__author">Надежда</span>
               <time >(45 часов назад)</time>
-              <span class="photo-post__text">Всем GM и взаимные лайки!</span>
+              <p class="photo-post__text">Всем GM и взаимные лайки!</p>
             </div>
             <div class="like-count">
               <span class="icon icon-heart"></span>
@@ -159,7 +161,7 @@
       </div>
       <div class="">
         <div class="user-posting__photo">
-          <img src="http://placehold.it/150x100" alt="" width="" height="">
+          <img src="img/photo-road-mobile@1x.jpg" alt="" width="280" height="374">
         </div>
         <div class="user-posting__editing-photo">
           <div class="filters">
@@ -167,33 +169,36 @@
             <input type="radio" id="filter-2" name="filter">
             <input type="radio" id="filter-3" name="filter">
             <div class="filter-controls">
-              <label for="filter-1"></label>
-              <label for="filter-2"></label>
-              <label for="filter-3"></label>
+              <label for="filter-1" class="filter1"></label>
+              <label for="filter-2" class="filter2"></label>
+              <label for="filter-3" class="filter3"></label>
             </div>
-            <div class="filter-slider">kbybz
+            <div class="filter-slider">
+              <input type="range">
             </div>
           </div>
         </div>
       </div>
       <div class="user-posting__choice">
         <a class="btn user-posting__btn" href="#">Запостить</a>
-        <a class="btn user-posting__btn" href="#">Отмена</a>
+        <a class="btn user-posting__btn--cancel" href="#">Отмена</a>
       </div>
     </div>
     <footer class="inner-footer">
-      <div class="inner-footer__logo">
-        <a class="inner-footer__logo" href="#">PINK</a>
-      </div>
-      <div class="inner-footer__social">
-        <a class="social social-twitter" href="#">Twitter</a>
-        <a class="social social-facebook" href="#">Facebook</a>
-        <a class="social social-youtube" href="#">Youtube</a>
-      </div>
-      <div class="inner-footer__copyright">
-        <span><p>Разработано</p></span>
-        <span class="icon icon-copyright"></span>
-      </div>
-    </footer>
+        <div class="inner-footer__logo">
+          <a class="inner-footer__logo" href="">
+            <img src="img/logo-pink-blue-mobile.svg" alt="PINK"></a>
+        </div>
+        <div class="inner-footer__social">
+          <a class="social social--twitter" href="#"></a>
+          <a class="social social--facebook" href="#"></a>
+          <a class="social social--youtube" href="#"></a>
+        </div>
+        <div class="inner-footer__copyright">
+          <p>Разработано</p>
+          <a class="icon icon-copyright" href="htmlacademy.html">
+            <img src="img/htmlacademy.svg" alt="HTML ACADEMY"></a>
+        </div>
+      </footer>
   </body>
 </html>

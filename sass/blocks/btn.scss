@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  color: white;
+  border: 2px solid white;
+  width: 280px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 27px;
+  margin-top: 26px;
+}
+
+.btn--green {
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  border-radius: 0;
+
+  &:hover {
+    background-color: #1c9b5e;
+    color: #9ecdb3;
+  }
+
+  &:active {
+    color: #7abc98;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #f1f1f1;
+  }
+}

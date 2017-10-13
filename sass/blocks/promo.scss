@@ -1,0 +1,23 @@
+.promo {
+  background-color: $navy;
+  color: white;
+  font-size: 24px;
+  font-weight: light;
+  line-height: normal;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0 0;
+}
+
+.promo img {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.promo--inner {
+  background-size: cover;
+  height: 130px;
+  padding-top: 38px;
+  padding-left: 20px;
+}

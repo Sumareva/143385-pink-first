@@ -1,0 +1,20 @@
+.page-header {
+  background-color: $navy;
+}
+
+.page-header a {
+  text-decoration: none;
+}
+
+.menu-toggler {
+  background-image: url("../img/icon-menu-cross.svg");
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 2;
+
+  &--close {
+    background-image: url("../img/icon-menu-burger.svg");
+  }
+}

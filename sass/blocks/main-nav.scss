@@ -1,0 +1,29 @@
+.main-nav {
+  background-color: $navy;
+  color: white;
+  width: 320px;
+}
+
+.main-nav ul {
+  list-style: none;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000001;
+}
+
+.main-nav a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

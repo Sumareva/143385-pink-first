@@ -1,0 +1,22 @@
+.download {
+  background-color: $navy;
+  padding: 20px;
+}
+
+.download ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.download__text {
+  font-weight: light;
+  line-height: 24px;
+  margin-bottom: 27px;
+  margin-top: 26px;
+  color: white;
+}

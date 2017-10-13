@@ -1,0 +1,33 @@
+.tariffs {
+  background-color: $gray;
+}
+
+.tariffs__table {
+  text-transform: uppercase;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.tariffs td {
+  border: 2px solid #e5e5e5;
+  width: 276px;
+}
+
+.tariffs__row-1 {
+  background-color: $blue;
+  color: white;
+}
+
+.tariffs__name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tariffs__price {
+  font-size: 24px;
+  font-weight: light;
+}
+
+.tariffs__promo {
+  background-color: $pink;
+}
