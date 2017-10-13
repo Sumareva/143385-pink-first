@@ -11,4 +11,10 @@
   display: block;
   width: 25px;
   height: 25px;
+  position: absolute;
+  z-index: 2;
+
+  &--close {
+    background-image: url("../img/icon-menu-burger.svg");
+  }
 }
