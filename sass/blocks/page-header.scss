@@ -1,20 +1,22 @@
 .page-header {
-  background-color: $navy;
+  position: relative;
+  height: 730px;
+  background: #283645 url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
 }
 
-.page-header a {
-  text-decoration: none;
+@media (min-width: $tablet-width) {
+  .page-header {
+  background-size: 1200px auto;
+  }
 }
 
-.menu-toggler {
-  background-image: url("../img/icon-menu-cross.svg");
-  display: block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  z-index: 2;
+@media (min-width: $desktop-width) {
+  .page-header {
+    background-size: cover;
+    height: 835px;
+  }
 
-  &--close {
-    background-image: url("../img/icon-menu-burger.svg");
+  .page-header__logo {
+    align-content: center;
   }
 }

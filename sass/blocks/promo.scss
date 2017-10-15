@@ -1,23 +1,100 @@
-.promo {
-  background-color: $navy;
-  color: white;
-  font-size: 24px;
-  font-weight: light;
-  line-height: normal;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center;
-  background-size: cover;
-  padding: 0 0;
+.promo__photo {
+  position: absolute;
+  top: 176px;
+  left: 20px;
 }
 
-.promo img {
-  margin-bottom: 0;
+.promo {
+   background: url("../img/iphone-hand-mobile@1x.png") center -105% no-repeat;
+   background-size: 256px 278px;
+   padding-top: 140px;
+   padding-bottom: 20px;
+}
+
+.promo__list {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__list li {
+  margin-left: 30px;
+}
+
+.promo__list li:first-child {
   margin-left: 0;
 }
 
-.promo--inner {
-  background-size: cover;
-  height: 130px;
-  padding-top: 38px;
-  padding-left: 20px;
+.promo__title {
+  font-size: 24px;
+  font-weight: light;
+  line-height: 24px;
+  margin-bottom: 27px;
+  margin-top: 26px;
+  color: white;
+}
+
+.promo__text {
+  color: white;
+  font-weight: light;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background: url("../img/iphone-hand-mobile@1x.png") 240px 75px no-repeat;
+    width: 620px;
+    padding-top: 0;
+    padding-left: 20px;
+    margin: 0 auto;
+  }
+
+  .promo__wrapper {
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 100px;
+    padding-left: 0;
+  }
+
+  .visually-hidden {
+    display: block;
+  }
+
+  .promo__title {
+    font-size: 40px;
+    line-height: normal;
+    width: 196px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background: url("../img/iphone-hand-mobile@1x.png") 440px 175px no-repeat;
+    width: 940px;
+    padding-top: 0;
+    padding-left: 10px;
+  }
+
+  .promo__wrapper {
+    width: 300px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    padding-left: 0;
+  }
+
+  .promo__title {
+    font-size: 50px;
+    line-height: normal;
+    width: 231px;
+    margin: 60px auto;
+  }
+
+  .promo__list {
+    margin: 60px auto;
+  }
 }
