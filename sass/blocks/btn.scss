@@ -11,26 +11,41 @@
   border-radius: 25px;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-bottom: 27px;
-  margin-top: 26px;
+  margin: 26px auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    width: 300px;
+  }
+
+  .btn--green {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn {
+    font-size: 21px;
+  }
 }
 
 .btn--green {
   background-color: #2aab6d;
   text-transform: uppercase;
   border-radius: 0;
+}
 
-  &:hover {
-    background-color: #1c9b5e;
-    color: #9ecdb3;
-  }
+.btn--green:hover {
+  background-color: #1c9b5e;
+  color: #9ecdb3;
+}
 
-  &:active {
-    color: #7abc98;
-  }
+.btn--green:active {
+  color: #7abc98;
+}
 
-  &:disabled {
-    background-color: #e5e5e5;
-    color: #f1f1f1;
-  }
+.btn--green:disabled {
+  opacity: 0.3;
 }

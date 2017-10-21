@@ -1,4 +1,51 @@
 .system-choice {
-  padding-left: 20px;
-  background-color: $gray;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.system-choice input {
+  display: none;
+}
+
+.system-choice label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    margin-right: 31px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+  }
+}
+
+.system-choice__item {
+  margin-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .system-choice {
+    width: 620px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .system-choice {
+    width: 100%;
+  }
+
+  .system-choice .contest__title {
+    padding: 0 18px;
+  }
 }

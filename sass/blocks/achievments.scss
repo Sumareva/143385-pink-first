@@ -1,4 +1,67 @@
-.achievments {
-  background-color: $gray;
+.achievments input[type="checkbox"] {
+  display: none;
+}
+
+.achievments__label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
   font-size: 18px;
+  line-height: 30px;
+}
+
+.achievments__item {
+  padding-top: 45px;
+}
+
+.achievments__label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 31px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.achievments__checkbox + .achievments__label .icon-allowed {
+  display: none;
+}
+
+.achievments__checkbox:checked + .achievments__label .icon-allowed {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 10px;
+}
+
+.achievments {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .achievments {
+    width: 620px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .achievments {
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+
+  .achievments__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    height: 235px;
+  }
 }
