@@ -4,19 +4,33 @@
   background: #283645 url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
 }
 
+.page-header--inner {
+  height: 235px;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
-    background-size: 1200px auto;
+    background-size: cover;
+    height: 590px;
+  }
+
+  .page-header--inner{
+    height: 333px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-size: cover;
+    background-size: 200%;
     height: 835px;
+    background-position: 50% 75%;
   }
 
   .page-header__logo {
     align-content: center;
+  }
+
+  .page-header--inner{
+    height: 300px;
   }
 }

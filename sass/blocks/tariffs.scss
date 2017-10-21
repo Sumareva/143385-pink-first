@@ -1,33 +1,143 @@
 .tariffs {
   background-color: $gray;
+  padding-top: 91px;
+  padding-bottom: 26px;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.tariffs__wrapper {
+  min-width: 320px;
+  margin:0 auto;
 }
 
 .tariffs__table {
   text-transform: uppercase;
   border-collapse: collapse;
   background-color: #ffffff;
+  position: relative;
+  min-width: 265%;
+  margin: 20px 0 70px 0;
 }
 
-.tariffs td {
+.tariffs__table td {
   border: 2px solid #e5e5e5;
-  width: 276px;
+  width: 280px;
 }
 
-.tariffs__row-1 {
+.tariffs__container {
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.tariffs__col-1 {
+  display: none;
+}
+
+.tariffs__col-3 {
+  overflow: hidden;
+}
+
+.tariffs__row-1 td {
   background-color: $blue;
   color: white;
+  padding: 20px;
+}
+
+.tariffs__main {
+  position: relative;
+
 }
 
 .tariffs__name {
   font-size: 18px;
   font-weight: bold;
+  display: block;
 }
 
 .tariffs__price {
+  display: block;
   font-size: 24px;
   font-weight: light;
 }
 
-.tariffs__promo {
+.tariffs__promo::before {
+  position: absolute;
+  content: "хит";
+  height: 30px;
+  width: 121px;
+  top: -9px;
+  left: -57px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: center;
+  text-transform: uppercase;
+  color: #fff;
   background-color: $pink;
+  transform: rotate(-45deg);
+  z-index: 10;
+}
+
+.tariffs__option {
+  position: relative;
+  padding-left: 20px;
+}
+
+.tariffs__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tariffs .icon {
+  display: inline;
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  display: block;
+  text-shadow: none;
+  color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__table {
+    min-width: 620px;
+    width: 100%;
+    max-width: 940px;
+  }
+
+.slider-controls--gray {
+  display: none;
+}
+
+  .btn-1:checked ~ .tariffs__container .tariffs__table,
+  .btn-2:checked ~ .tariffs__container .tariffs__table,
+  .btn-3:checked ~ .tariffs__container .tariffs__table {
+    transform: translateX(0%);
+  }
+
+  .tariffs__col-1 {
+    display: table-cell;
+    text-transform: none;
+    text-align: left;
+  }
+
+  .tariffs__table td {
+    width: 150px;
+  }
+  .tariffs__option--hidden {
+    display: none;
+  }
+
+  .tariffs .icon {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__table {
+    margin: 0 auto;
+  }
 }

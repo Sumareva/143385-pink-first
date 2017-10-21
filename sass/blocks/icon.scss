@@ -9,6 +9,11 @@
 }
 
 .icon-heart {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0;
+  top: 4px;
   width: 13px;
   height: 13px;
   background-image: url("../img/icon-heart.svg");
@@ -20,4 +25,38 @@
 
 .icon-disabled {
   background-image: url("../img/icon-no.svg");
+}
+
+.icon--crop {
+  left: 30px;
+  background-image: url("../img/icon-editor-crop.svg");
+}
+
+.icon--fill {
+  left: 120px;
+  background-image: url("../img/icon-editor-fill.svg");
+}
+
+.icon--contrast {
+  left: 200px;
+  background-image: url("../img/icon-editor-contrast.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .icon-heart {
+    left: 98px;
+  }
+
+  .icon--crop {
+    left: 10px;
+    top: 4px;
+  }
+
+  .icon--fill {
+   left: 4px;
+  }
+
+  .icon--contrast {
+    left: 4px;
+  }
 }

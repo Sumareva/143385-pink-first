@@ -1,8 +1,77 @@
 .form-contacts {
   line-height: 30px;
+  order: 3;
+  width: 280px;
+  margin: 0 auto;
+  padding: 38px 0 38px;
 }
 
 .form-contacts label {
   color: $pink;
   text-transform: uppercase;
+  margin: auto 18px;
+}
+
+.form-contacts .contest__title {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-contacts .contest__title {
+    display: block;
+  }
+
+  .form-contacts {
+    width: 620px;
+    margin-top: 50px;
+    padding: 38px 0 0 0;
+    order: 1;
+  }
+
+  .form-contacts__item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin-top: 3px;
+    margin-bottom: 29px;
+    position: relative;
+    padding: 0 60px;
+  }
+
+  .form-contacts__item::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 19px;
+    background-image: url(../img/icon-no.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    top: 22px;
+    right: 80px;
+  }
+
+  .form-contacts label {
+    margin: -31px 18px 0;
+  }
+}
+
+@media (min-width: $desktop-width){
+  .form-contacts {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+  }
+
+  .form-contacts__item {
+    width: 50%;
+  }
+
+  .form-contacts__item:first-child {
+    padding-right: 0px;
+  }
+
+  .form-contacts__wrapper {
+    display: flex;
+  }
 }

@@ -1,4 +1,42 @@
 .fio label {
   color: $pink;
   text-transform: uppercase;
+  margin: auto 18px;
+}
+
+.fio {
+  width: 280px;
+  margin: 0 auto;
+  order: 1;
+}
+
+.fio span {
+  display: flex;
+  flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) {
+
+      .fio span {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    .fio {
+      border: none;
+      width: 620px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .fio {
+    width: 50%;
+    padding-right: 35px;
+  }
+
+  .fio span {
+    margin-bottom: 40px;
+  }
 }

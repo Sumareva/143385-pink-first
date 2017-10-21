@@ -5,6 +5,7 @@
 @media (min-width: $tablet-width) {
   .research {
     display: block;
+
   }
 
   .research__wrapper::before {
@@ -46,10 +47,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .research {
+    background-color: $gray;
+  }
+
   .research__wrapper {
     width: 940px;
     margin: 0 auto;
-    background-color: $gray;
     padding-top: 60px;
   }
 

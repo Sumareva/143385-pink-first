@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <a class="page-header__logo" href="#">
@@ -30,8 +30,9 @@
           </ul>
         </div>
       </nav>
-      <div class="promo">
-          <div class="promo__wrapper">
+      <div class="promo promo--index">
+        <div class="promo__wrapper">
+          <div class="promo__container">
             <div class="promo__title"><span class="visually-hidden">Взгляните на жизнь иначе!</span>
             </div>
             <a class="btn btn--download" href="#">Скачать приложение</a>
@@ -47,27 +48,30 @@
               </li>
             </ul>
             <p class="promo__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
-            </div>
           </div>
         </div>
+      </div>
     </header>
     <div class="features">
+      <div class="features__title">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </div>
       <div class="features__wrapper">
-        <div class="features__title">
-          <p>Устали от серости мегаполиса?</p>
-          <p>Нам есть, что вам предложить!</p>
-        </div>
         <div class="features__items">
           <div class="features__container">
             <div class="features__item">
+              <div class="features__image"></div>
               <h2 class="features__h2">Поднимает настроение</h2>
               <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
             <div class="features__item">
+              <div class="features__image"></div>
               <h2 class="features__h2">Меняет мир вокруг</h2>
               <p class="features__text"> Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
             <div class="features__item">
+              <div class="features__image"></div>
               <h2 class="features__h2">Заводит новых друзей</h2>
               <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
@@ -102,7 +106,7 @@
             </li>
             <li class="reviews__item slider__item">
               <div class="reviews__author">
-                <h2 class="reviews__name">Николай Петров</h2>
+                <h2 class="reviews__name">Иван Сидоров</h2>
                 <p class="reviews__info">25 лет, водитель трамвая</p>
               </div>
               <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
@@ -110,7 +114,7 @@
             </li>
             <li class="reviews__item slider__item">
               <div class="reviews__author">
-                <h2 class="reviews__name">Николай Петров</h2>
+                <h2 class="reviews__name">Савелий Краморов</h2>
                 <p class="reviews__info">25 лет, водитель трамвая</p>
               </div>
               <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
@@ -129,122 +133,154 @@
       </div>
     </div>
     <div class="tariffs">
-      <div class="slider">
-        <input type="radio" id="btn-1" name="toggle">
-        <input type="radio" id="btn-2" name="toggle" checked>
-        <input type="radio" id="btn-3" name="toggle">
-        <table class="tariffs__table">
-          <tr class="tariffs__row-1">
-            <td class="tariffs__col-1">
-            </td>
-            <td class="tariffs__col-2">
-              <span class="tariffs__name">База</span>
-              <span class="tariffs__price">1,99 USD</span>
-            </td>
-            <td class="tariffs__col-3">
-              <span class="tariffs__promo">ХИТ</span>
-              <span class="tariffs__name">Стандарт</span>
-              <span class="tariffs__price">3,99 USD</span>
-            </td>
-            <td class="tariffs__col-4">
-              <span class="tariffs__name">Анлим</span>
-              <span class="tariffs__price">9,99 USD</span>
-            </td>
-          </tr>
-          <tr class="tariffs__row-2">
-            <td class="tariffs__col-1">
-              <span class="tariffs__option tariffs__option--title">Розовый фильтр</span>
-            </td>
-            <td class="tariffs__col-2">
-              <span class="tariffs__option tariffs__option--hidden">Розовый фильтр</span>
-              <span class="icon icon-allowed">Есть</span>
-            </td>
-            <td class="tariffs__col-3">
-              <span class="tariffs__option tariffs__option--hidden">Розовый фильтр</span>
-              <span class="icon icon-allowed">Есть</span>
-            </td>
-            <td class="tariffs__col-4">
-              <span class="tariffs__option tariffs__option--hidden">Розовый фильтр</span>
-              <span class="icon icon-allowed">Есть</span>
-            </td>
-          </tr>
-          <tr class="tariffs__row-3">
-            <td class="tariffs__col-1">
-              <span class="tariffs__option tariffs__option--title">Смайлики</span>
-            </td>
-            <td class="tariffs__col-2">
-              <span class="tariffs__option tariffs__option--hidden">Смайлики</span>
-              <span class="icon icon-disabled">Нет</span>
-            </td>
-            <td class="tariffs__col-3">
-              <span class="tariffs__option tariffs__option--hidden">Смайлики</span>
-              <span class="icon icon-allowed">Есть</span>
-            </td>
-            <td class="tariffs__col-4">
-              <span class="tariffs__option tariffs__option--hidden">Смайлики</span>
-              <span class="icon icon-allowed">Есть</span>
-            </td>
-          </tr>
-          <tr class="tariffs__row-4">
-              <td class="tariffs__col-1">
-                <span class="tariffs__option tariffs__option--title">Комментарии</span>
-              </td>
-            <td class="tariffs__col-2">
-              <span class="tariffs__option tariffs__option--hidden">Комментарии</span>
-              <span class="icon icon-disabled">Нет</span>
-            </td>
-            <td class="tariffs__col-3">
-              <span class="tariffs__option tariffs__option--hidden">Комментарии</span>
-              <span class="icon icon-disabled">Нет</span>
-            </td>
-            <td class="tariffs__col-4">
-              <span class="tariffs__option tariffs__option--hidden">Комментарии</span>
-              <span class="icon icon-allowed">Есть</span>
-            </td>
-          </tr>
-        </table>
+      <div class="tariffs__wrapper slider">
+        <input type="radio" id="btn-1" name="toggle" class="btn-1">
+        <input type="radio" id="btn-2" name="toggle" class="btn-2" checked>
+        <input type="radio" id="btn-3" name="toggle" class="btn-3">
         <div class="slider-controls slider-controls--gray">
           <label for="btn-1"></label>
           <label for="btn-2"></label>
           <label for="btn-3"></label>
         </div>
+        <div class="tariffs__container">
+          <table class="tariffs__table">
+            <tr class="tariffs__row-1">
+              <td class="tariffs__col-1">
+              </td>
+              <td class="tariffs__col-2">
+                <div class="tariffs__main">
+                  <span class="tariffs__name">База</span>
+                  <span class="tariffs__price">1,99 USD</span>
+                </div>
+              </td>
+              <td class="tariffs__col-3">
+                <div class="tariffs__main">
+                  <span class="tariffs__promo"></span>
+                  <span class="tariffs__name">Стандарт</span>
+                  <span class="tariffs__price">3,99 USD</span>
+                </div>
+              </td>
+              <td class="tariffs__col-4">
+                <div class="tariffs__main">
+                  <span class="tariffs__name">Анлим</span>
+                  <span class="tariffs__price">9,99 USD</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="tariffs__row-2">
+              <td class="tariffs__col-1">
+                <span class="tariffs__option tariffs__option--title">Розовый фильтр</span>
+              </td>
+              <td class="tariffs__col-2">
+                <div class="tariffs__inner">
+                  <span class="tariffs__option tariffs__option--hidden">Розовый фильтр</span>
+                  <span class="icon icon-allowed">Есть</span>
+                </div>
+              </td>
+              <td class="tariffs__col-3">
+                <div class="tariffs__inner">
+                  <span class="tariffs__option tariffs__option--hidden">Розовый фильтр</span>
+                  <span class="icon icon-allowed">Есть</span>
+                </div>
+              </td>
+              <td class="tariffs__col-4">
+                <div class="tariffs__inner">
+                  <span class="tariffs__option tariffs__option--hidden">Розовый фильтр</span>
+                  <span class="icon icon-allowed">Есть</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="tariffs__row-3">
+              <td class="tariffs__col-1">
+                <span class="tariffs__option tariffs__option--title">Смайлики</span>
+              </td>
+              <td class="tariffs__col-2">
+                <div class="tariffs__inner">
+                  <span class="tariffs__option tariffs__option--hidden">Смайлики</span>
+                  <span class="icon icon-disabled">Нет</span>
+                </div>
+              </td>
+              <td class="tariffs__col-3">
+                <div class="tariffs__inner">
+                  <span class="tariffs__option tariffs__option--hidden">Смайлики</span>
+                  <span class="icon icon-allowed">Есть</span>
+                </div>
+              </td>
+              <td class="tariffs__col-4">
+                <div class="tariffs__inner">
+                  <span class="tariffs__option tariffs__option--hidden">Смайлики</span>
+                  <span class="icon icon-allowed">Есть</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="tariffs__row-4">
+              <td class="tariffs__col-1">
+                <span class="tariffs__option tariffs__option--title">Комментарии</span>
+              </td>
+              <td class="tariffs__col-2">
+                <div class="tariffs__inner">
+                  <span class="tariffs__option tariffs__option--hidden">Комментарии</span>
+                  <span class="icon icon-disabled">Нет</span>
+                </div>
+              </td>
+              <td class="tariffs__col-3">
+                <div class="tariffs__inner">
+                  <span class="tariffs__option tariffs__option--hidden">Комментарии</span>
+                  <span class="icon icon-disabled">Нет</span>
+                </div>
+              </td>
+              <td class="tariffs__col-4">
+                <div class="tariffs__inner">
+                  <span class="tariffs__option tariffs__option--hidden">Комментарии</span>
+                  <span class="icon icon-allowed">Есть</span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
     <footer class="page-footer">
-      <div class="page-footer__title">
-        <p>Остались вопросы?</p>
-        <p>Свяжитесь с нами!</p>
-      </div>
-      <div class="page-footer__contacts">
-        <div class="contact">
-          <h2 class="contact__title">Звоните:</h2>
-          <p>+7(812)555-66-66</p>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__title">
+          <p>Остались вопросы?</p>
+          <p>Свяжитесь с нами!</p>
         </div>
-        <div class="contact">
-          <h2 class="contact__title">Пишите:</h2>
-          <p> mail@htmlacademy.ru</p>
+        <div class="page-footer__contacts">
+          <div class="contact">
+            <h2 class="contact__title">Звоните:</h2>
+            <p>+7(812)555-66-66</p>
+          </div>
+          <div class="contact">
+            <h2 class="contact__title">Пишите:</h2>
+            <p> mail@htmlacademy.ru</p>
+          </div>
+          <div class="contact">
+            <h2 class="contact__title">Приезжайте в гости:</h2>
+            <p>ул. Большая Конюшенная, 19/8</p>
+          </div>
         </div>
-        <div class="contact">
-          <h2 class="contact__title">Приезжайте в гости:</h2>
-          <p>ул. Большая Конюшенная, 19/8</p>
+      </div>
+      <div class="page-footer__map">
+        <div class="page-footer__map-target">
         </div>
+        <img src="img/bg-map-mobile@1x.png" class="map">
       </div>
-      <div class="map">
-        <img src="img/bg-map-mobile@1x.png" width="320" height="421">
-      </div>
-      <div class="inner-footer__logo">
-        <a class="inner-footer__logo" href="">
-          <img src="img/logo-pink-blue-mobile.svg" alt="PINK"></a>
-      </div>
-      <div class="inner-footer__social">
-        <a class="social social--twitter" href="#"></a>
-        <a class="social social--facebook" href="#"></a>
-        <a class="social social--youtube" href="#"></a>
-      </div>
-      <div class="inner-footer__copyright">
-        <p>Разработано</p>
-        <a class="icon icon-copyright" href="htmlacademy.html">
-          <img src="img/htmlacademy.svg" alt="HTML ACADEMY"></a>
+      <div class="page-footer__wrapper page-footer__wrapper--index">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo" href="">
+            <img src="img/logo-pink-blue-mobile.svg" alt="PINK"></a>
+        </div>
+        <div class="page-footer__social">
+          <a class="social social--twitter" href="#"></a>
+          <a class="social social--facebook" href="#"></a>
+          <a class="social social--youtube" href="#"></a>
+        </div>
+        <div class="page-footer__copyright">
+          <p>Разработано</p>
+          <a class="icon icon-copyright" href="htmlacademy.html">
+            <img src="img/logo-htmlacademy.svg" alt="HTML ACADEMY"></a>
+        </div>
       </div>
     </footer>
   </body>

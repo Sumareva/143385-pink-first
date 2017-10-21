@@ -1,14 +1,12 @@
-.promo__photo {
-  position: absolute;
-  top: 176px;
-  left: 20px;
+.promo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 400px;
 }
 
-.promo {
-  background: url("../img/iphone-hand-mobile@1x.png") center -105% no-repeat;
+.promo--index {
+  background: url("../img/iphone-hand-mobile@1x.png") 33% 36% no-repeat;
   background-size: 256px 278px;
-  padding-top: 140px;
-  padding-bottom: 20px;
 }
 
 .promo__list {
@@ -44,20 +42,25 @@
   line-height: 24px;
 }
 
+.promo--inner {
+  width: 280px;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
-  .promo {
-    background: url("../img/iphone-hand-mobile@1x.png") 240px 75px no-repeat;
+  .promo__wrapper {
     width: 620px;
-    padding-top: 0;
-    padding-left: 20px;
     margin: 0 auto;
+    padding-top: 100px;
   }
 
-  .promo__wrapper {
+  .promo--index {
+    background: url("../img/iphone-hand-mobile@1x.png") 66% 66% no-repeat;
+
+  }
+
+  .promo__container {
     width: 300px;
-    padding-top: 5px;
-    padding-bottom: 100px;
-    padding-left: 0;
   }
 
   .visually-hidden {
@@ -70,21 +73,25 @@
     width: 196px;
     margin: 0 auto;
   }
+
+  .promo--inner {
+    width: 620px;
+  }
+
+  .promo--inner .promo__title {
+    width: 500px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .promo {
-    background: url("../img/iphone-hand-mobile@1x.png") 440px 175px no-repeat;
+  .promo__wrapper {
     width: 940px;
-    padding-top: 0;
-    padding-left: 10px;
+    padding-top: 133px;
   }
 
-  .promo__wrapper {
-    width: 300px;
-    padding-top: 60px;
-    padding-bottom: 120px;
-    padding-left: 0;
+  .promo--index {
+    background: url(../img/iphone-hand-mobile@1x.png) 77% 100% no-repeat;
+    background-size: 540px;
   }
 
   .promo__title {
@@ -96,5 +103,12 @@
 
   .promo__list {
     margin: 60px auto;
+  }
+
+  .promo--inner {
+    width: 940px;
+  }
+  .promo--inner .promo__title {
+    width: 820px;
   }
 }
