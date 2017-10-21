@@ -1,10 +1,3 @@
-/*.achievments {
-  background-color: $gray;
-  font-size: 18px;
-  border: none;
-  background-color: $gray;
-}*/
-
 .achievments input[type="checkbox"] {
   display: none;
 }
@@ -16,6 +9,7 @@
   font-size: 18px;
   line-height: 30px;
 }
+
 .achievments__item {
   padding-top: 45px;
 }
@@ -27,7 +21,7 @@
   width: 35px;
   height: 35px;
   margin-right: 31px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
@@ -47,7 +41,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .achievments {
     width: 620px;
     padding-left: 60px;
@@ -64,10 +58,10 @@
   }
 
   .achievments__wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: stretch;
-      height: 235px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    height: 235px;
   }
 }

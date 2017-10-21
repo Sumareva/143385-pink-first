@@ -2,14 +2,14 @@
   background-color: $gray;
   padding-top: 91px;
   padding-bottom: 26px;
-  background-image: url(../img/bg-triangle-white.svg);
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
 
 .tariffs__wrapper {
   min-width: 320px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .tariffs__table {
@@ -47,7 +47,6 @@
 
 .tariffs__main {
   position: relative;
-
 }
 
 .tariffs__name {
@@ -74,7 +73,7 @@
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   background-color: $pink;
   transform: rotate(-45deg);
   z-index: 10;
@@ -92,7 +91,6 @@
 }
 
 .tariffs .icon {
-  display: inline;
   width: 60px;
   height: 60px;
   margin: 0 20px;
@@ -108,9 +106,9 @@
     max-width: 940px;
   }
 
-.slider-controls--gray {
-  display: none;
-}
+  .slider-controls--gray {
+    display: none;
+  }
 
   .btn-1:checked ~ .tariffs__container .tariffs__table,
   .btn-2:checked ~ .tariffs__container .tariffs__table,
@@ -127,6 +125,7 @@
   .tariffs__table td {
     width: 150px;
   }
+
   .tariffs__option--hidden {
     display: none;
   }

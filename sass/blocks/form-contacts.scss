@@ -43,7 +43,7 @@
     content: "";
     width: 20px;
     height: 19px;
-    background-image: url(../img/icon-no.svg);
+    background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-size: 20px 19px;
     top: 22px;
@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .form-contacts {
     width: 940px;
     display: flex;
@@ -68,7 +68,7 @@
   }
 
   .form-contacts__item:first-child {
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .form-contacts__wrapper {

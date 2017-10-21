@@ -19,6 +19,7 @@
   .btn {
     width: 300px;
   }
+
   .btn--green {
     margin: 0;
   }
@@ -36,15 +37,15 @@
   border-radius: 0;
 }
 
-  .btn--green:hover {
-    background-color: #1c9b5e;
-    color: #9ecdb3;
-  }
+.btn--green:hover {
+  background-color: #1c9b5e;
+  color: #9ecdb3;
+}
 
-  .btn--green:active {
-    color: #7abc98;
-  }
+.btn--green:active {
+  color: #7abc98;
+}
 
-  .btn--green:disabled {
-    opacity: 0.3;
-  }
+.btn--green:disabled {
+  opacity: 0.3;
+}

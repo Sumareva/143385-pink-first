@@ -90,7 +90,7 @@
   }
 
   .promo--index {
-    background: url(../img/iphone-hand-mobile@1x.png) 77% 100% no-repeat;
+    background: url("../img/iphone-hand-mobile@1x.png") 77% 100% no-repeat;
     background-size: 540px;
   }
 
@@ -108,6 +108,7 @@
   .promo--inner {
     width: 940px;
   }
+
   .promo--inner .promo__title {
     width: 820px;
   }

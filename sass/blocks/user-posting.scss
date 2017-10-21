@@ -32,9 +32,8 @@
   border-bottom: 1px solid #dddfe0;
 }
 
-.user-posting__range--active{
+.user-posting__range--active {
   display: inline;
-
 }
 
 .user-posting__editor {
@@ -82,6 +81,7 @@
     justify-content: space-between;
     padding-top: 57px;
   }
+
   .user-posting__photo {
     margin-right: 40px;
   }
@@ -100,7 +100,7 @@
     width: 300px;
   }
 
-  .user-posting__editor{
+  .user-posting__editor {
     position: absolute;
     left: 0;
     margin-top: 0;
@@ -146,8 +146,9 @@
 
   .user-posting__wrapper {
     width: 940px;
-    background-color: $gray
+    background-color: $gray;
   }
+
   .user-posting__photo {
     margin-left: 80px;
     margin-right: 90px;
