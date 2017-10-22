@@ -1,17 +1,44 @@
 .page-header {
   position: relative;
-  height: 730px;
-  background: #283645 url("../img/bg-back-mobile@1x.jpg") 50% 0 no-repeat;
+  margin-bottom: -66px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .page-header--inner {
   height: 235px;
 }
+.page-header__wrapper {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-header__logo {
+  padding: 22px 0 21px 20px;
+  border-bottom: 1px solid #000;
+  background-color: $blue;
+  background-color: transparent;
+  border-bottom: none;
+  padding-bottom: 18px;
+  box-sizing: border-box;
+  text-align: left;
+
+}
 
 @media (min-width: $tablet-width) {
   .page-header {
-    background-size: cover;
-    height: 590px;
+    margin-bottom: -109px;
+  }
+
+  .page-header__wrapper {
+    width: auto;
+    padding: 0;
+  }
+
+  .page-header__logo {
+    padding-top: 27px;
+    padding-bottom: 39px;
   }
 
   .page-header--inner {
@@ -21,13 +48,20 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background-size: 200%;
-    height: 835px;
-    background-position: 50% 75%;
+    height: 110px;
+    margin-bottom: -110px;
   }
 
+  .page-header__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+
   .page-header__logo {
-    align-content: center;
+    float: left;
+    padding-left: 0;
   }
 
   .page-header--inner {

@@ -8,28 +8,33 @@
   </head>
   <body>
     <header class="page-header page-header--index">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <a class="page-header__logo" href="#">
-            <img src="img/logo-pink-white-mobile.svg" alt="PINK">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a class="page-header__logo-link" href="index.html">
+           <img src="img/logo-pink-white-mobile.svg" alt="Pink logo">
           </a>
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden"></span></button>
-          <ul class="main-nav__list">
-            <li>
-              <a class="main-nav__item" href="#">Главная</a>
-            </li>
-            <li>
-              <a class="main-nav__item" href="photo.html">Фотографии</a>
-            </li>
-            <li>
-              <a class="main-nav__item" href="form.html">Конкурс</a>
-            </li>
-            <li>
-              <a class="main-nav__item" href="#">Html academy</a>
-            </li>
-          </ul>
         </div>
-      </nav>
+        <nav class="main-nav main-nav--opened main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button"></button>
+          <div class="main-nav__container">
+            <ul class="main-nav__list ">
+              <li>
+                <a class="main-nav__item main-nav__item--active" href="#">Главная</a>
+              </li>
+              <li>
+                <a class="main-nav__item" href="photo.html">Фотографии</a>
+              </li>
+              <li>
+                <a class="main-nav__item" href="form.html">Конкурс</a>
+              </li>
+              <li>
+                <a class="main-nav__item" href="#">Html academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
       <div class="promo promo--index">
         <div class="promo__wrapper">
           <div class="promo__container">
@@ -51,7 +56,6 @@
           </div>
         </div>
       </div>
-    </header>
     <div class="features">
       <div class="features__title">
         <p>Устали от серости мегаполиса?</p>
@@ -106,7 +110,7 @@
             </li>
             <li class="reviews__item slider__item">
               <div class="reviews__author">
-                <h2 class="reviews__name">Иван Сидоров</h2>
+                <h2 class="reviews__name">Николай Петров</h2>
                 <p class="reviews__info">25 лет, водитель трамвая</p>
               </div>
               <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
@@ -114,7 +118,7 @@
             </li>
             <li class="reviews__item slider__item">
               <div class="reviews__author">
-                <h2 class="reviews__name">Савелий Краморов</h2>
+                <h2 class="reviews__name">Николай Петров</h2>
                 <p class="reviews__info">25 лет, водитель трамвая</p>
               </div>
               <blockquote class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"
@@ -283,5 +287,41 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var headerLogo = document.querySelector('.page-header__logo');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      function openMenu() {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+        headerLogo.style.backgroundColor = '#283645';
+        headerLogo.style.borderBottom = '1px solid #000';
+        if (window.innerWidth < 660) {
+          headerLogo.style.paddingBottom = '21px';
+        };
+      }
+      function closeMenu() {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+        headerLogo.style.backgroundColor = 'transparent';
+        headerLogo.style.borderBottom = 'none';
+        if (window.innerWidth < 660) {
+          headerLogo.style.paddingBottom = '18px';
+        };
+      }
+
+      closeMenu();
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          openMenu()
+        } else {
+          closeMenu()
+        };
+      });
+    </script>
   </body>
 </html>
