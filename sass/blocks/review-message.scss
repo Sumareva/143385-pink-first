@@ -1,3 +1,22 @@
-.review-message label {
-  text-align: center;
+.review-message {
+  order: 5;
+  width: 280px;
+  margin: 30px auto;
+  padding: 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .review-message {
+    width: 620px;
+    padding: 35px 60px;
+    box-sizing: border-box;
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review-message {
+    width: 940px;
+    padding: 40px 60px;
+  }
 }

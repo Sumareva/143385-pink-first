@@ -1,16 +1,25 @@
-
 body {
-  background: #ffffff;
-  width: 320px;
-  margin: 0;
+  font-family: "OpenSans", sans-serif;
   font-size: 14px;
+  font-weight: normal;
   line-height: 30px;
   color: #283645;
-  font-family: "OpenSans";
-  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
   text-align: center;
+  background-color: #ffffff;
 }
 
-.visualy-hidden {
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
   display: none;
 }
